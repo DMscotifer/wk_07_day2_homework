@@ -72,4 +72,9 @@ public abstract class Vehicle {
         return this.getMake() + this.getType() + " attacked " + target.getName() + " with light weapons.";
     }
 
+    public String heavyWeaponAttack(Kaiju target){
+        target.setHealthValue((target.getHealthValue()) - this.getHeavyWeapon());
+        return this.getMake() + this.getType() + " attacked " + target.getName() + " with heavy weapons.";
+    }
+
 }
