@@ -6,8 +6,8 @@ public class AerialVehicle extends Vehicle {
     private int maxFuel;
     private int remainingFuel;
 
-    public AerialVehicle(String make, String model, String type, int healthValue, int flightSpeed, int maxFuel) {
-        super(make, model, type, healthValue);
+    public AerialVehicle(String make, String model, String type, int healthValue, int flightSpeed, int maxFuel, int lightWeapon, int heavyWeapon) {
+        super(make, model, type, healthValue, lightWeapon, heavyWeapon);
         this.flightSpeed = flightSpeed;
         this.maxFuel = maxFuel;
         this.remainingFuel = maxFuel;
@@ -36,5 +36,7 @@ public class AerialVehicle extends Vehicle {
     public void setRemainingFuel(int remainingFuel) {
         this.remainingFuel = remainingFuel;
     }
+
+
 
 }

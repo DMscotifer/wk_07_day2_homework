@@ -6,8 +6,8 @@ public class HeavyTank extends Vehicle {
     private String commander;
     private String nation;
 
-    public HeavyTank(String make, String model, String type, int healthValue, String commander, String nation) {
-        super(make, model, type, healthValue);
+    public HeavyTank(String make, String model, String type, int healthValue, String commander, String nation, int lightWeapon, int heavyWeapon) {
+        super(make, model, type, healthValue, lightWeapon, heavyWeapon);
         this.commander = commander;
         this.nation = nation;
     }

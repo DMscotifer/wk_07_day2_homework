@@ -1,3 +1,7 @@
+package kaiju;
+
+import vehicle.Vehicle;
+
 public class Kaiju {
 
     private String name;
@@ -37,4 +41,14 @@ public class Kaiju {
     public String roar(){
         return "[booming] ROAR!!!!...";
     }
+
+    public String attack(Vehicle target){
+        target.setHealthValue((target.getHealthValue()) - this.getAttackValue());
+        return this.getName() + " attacked " + target.getModel();
+    }
+
+    public String move(String movementType ){
+        return this.getName() + " " + movementType;
+    }
+
 }
